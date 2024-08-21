@@ -14,7 +14,7 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Bluecomment # the main title
+title: Bluecomment # the main title 
 
 tagline: Programming, The Language of the Future # it will display as the sub-title
 
