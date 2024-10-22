@@ -90,9 +90,3 @@ Since we have added the custom field below the post content it will be shown acc
 Hope everyone got a clear idea of how to add custom fields in BlogEngine. Custom fields are very powerful data structures .you can add more functionalities and extend the design of the pages using it.
 
 Please refer to the BlogEngine page for [custom field explanation](https://blogengine.io/docs/custom-fields/ "how to use custom field").
-
-Comment below if you have any doubts.
-
-> If you like the article and find it helpful please share it in your favourite social media sites.
-
-Thank you have a great day!

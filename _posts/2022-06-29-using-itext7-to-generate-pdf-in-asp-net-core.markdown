@@ -467,5 +467,3 @@ public class PdfGenerateService : IPdfGenerateService
 Overall we have discussed some of the daily use features and customization possible with iText7 library. The scope of the library is much more than what we discussed above, however above mentioned tips will be very handy while you are developing pdf for some applications.
 
 The complete source code of the project is available [here](https://github.com/lijotech/PdfGenerateDemo "Pdf Generate Demo").
-
-# Hope you enjoy the article. Kindly share it on your social media profile if you find this helpful and don't forget to drop in your comments.
