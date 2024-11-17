@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Feature Management in c#"
+title: "Feature Management in C#"
 date: 2024-05-20 13:16:00 +0200
 comments: true
 published: true

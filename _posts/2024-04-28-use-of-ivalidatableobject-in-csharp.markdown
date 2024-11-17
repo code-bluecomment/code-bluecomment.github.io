@@ -4,7 +4,7 @@ title: "Use of IValidatableObject in C#"
 date: 2024-04-28 16:10:00 +0200
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["blog", "archives", "csharp"]
 tags: ["IValidatableObject", "validation", "ValidationResult", "custom validation" ]
 permalink: /post/use-of-ivalidatableobject-in-csharp
 ---
