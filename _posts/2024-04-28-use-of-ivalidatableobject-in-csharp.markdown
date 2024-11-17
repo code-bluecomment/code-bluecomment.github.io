@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Use of IValidatableObject in C#"
-date: 2020-04-28 16:10:00 +0200
+date: 2024-04-28 16:10:00 +0200
 comments: true
 published: true
 categories: ["blog", "archives"]
