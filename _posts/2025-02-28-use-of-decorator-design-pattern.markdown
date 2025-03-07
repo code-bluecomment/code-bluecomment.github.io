@@ -240,3 +240,5 @@ While the decorator pattern offers flexibility and reusability, it also comes wi
 
 
 Remember, the decorator pattern is all about adding behavior to an object without modifying the object itself. Instead, you create a new class that wraps the original object and adds the new behavior. This allows for a high degree of flexibility and customization in your code. It’s a powerful tool in the toolbox of any ASP.NET Core developer.
+
+Feel free to explore the [GitHub repository](https://github.com/lijotech/CSharpCodeExamples/tree/main/UseOfDecoratorPattern) for more details and examples. Happy coding!
