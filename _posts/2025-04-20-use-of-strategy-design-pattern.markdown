@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Use of Strategy Design Pattern in C#"
-date: 2025-05-20 07:16:00 +0200
+date: 2025-04-20 07:16:00 +0200
 comments: true
 published: true
 categories: ["blog", "archives", "csharp"]
