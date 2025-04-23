@@ -13,33 +13,49 @@ Badges from [shields.io](https://shields.io/) are great visual aids for displayi
 ## Common Tags for Git Repositories
 Badges often use the following tags to convey information:
 
-### Build Status: ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+### Build Status:
+
 Indicates whether the latest build is passing or failing.
 
+| View  | ![Build Status](https://img.shields.io/badge/build-passing-brightgreen) |
+| ------------- | ------------- |
+| Markdown     | ``` ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)``` |
 
-### License: ![License](https://img.shields.io/badge/license-MIT-blue)
+
+### License: 
 Shows the license type of your project.
 
+| View      | ![License](https://img.shields.io/badge/license-MIT-blue) |
+| ----------- | ----------- |
+| Markdown      | ```![License](https://img.shields.io/badge/license-MIT-blue)``` |
 
-### Version: ![Version](https://img.shields.io/badge/version-1.0.0-blue)
+### Version: 
 Displays the current version of the project.
 
+| View      | ![Version](https://img.shields.io/badge/version-1.0.0-blue) |
+| ----------- | ----------- |
+| Markdown      | ```![Version](https://img.shields.io/badge/version-1.0.0-blue)``` |
 
-
-### Dependencies: ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)
+### Dependencies: 
 Highlights whether project dependencies are up-to-date.
 
+| View      | ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen) |
+| ----------- | ----------- |
+| Markdown      | ```![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)``` |
 
-
-### Code Coverage: ![Coverage](https://img.shields.io/badge/coverage-85%25-yellow)
+### Code Coverage: 
 Represents the percentage of code covered by tests.
 
+| View      | ![Coverage](https://img.shields.io/badge/coverage-85%25-yellow) |
+| ----------- | ----------- |
+| Markdown      | ```![Coverage](https://img.shields.io/badge/coverage-85%25-yellow)``` |
 
-
-### Contributors: ![Contributors](https://img.shields.io/badge/contributors-5-blue)
+### Contributors: 
 Tracks the number of contributors.
 
-
+| View      | ![Contributors](https://img.shields.io/badge/contributors-5-blue) |
+| ----------- | ----------- |
+| Markdown      | ```![Contributors](https://img.shields.io/badge/contributors-5-blue)``` |
 
 ## Types of Badges
 
@@ -47,13 +63,20 @@ Tracks the number of contributors.
 
     Example: A "Hello World" badge:
     
-    ![Static Badge](https://img.shields.io/badge/hello-world-brightgreen)
+    | View      | ![Static Badge](https://img.shields.io/badge/hello-world-brightgreen) |
+    | ----------- | ----------- |
+    | Markdown      | ```![Static Badge](https://img.shields.io/badge/hello-world-brightgreen)``` |
+    
 
 - **Dynamic Badges**: They fetch real-time data from APIs or external systems. For example:
 
     Build status fetched dynamically from GitHub Actions: 
 
-    ![Build Status](https://img.shields.io/github/actions/workflow/status/lijotech/shields-badges-repo/build.yml)
+    | View      |   ![Build Status](https://img.shields.io/github/actions/workflow/status/lijotech/shields-badges-repo/build.yml) |
+    | ----------- | ----------- |
+    | Markdown      | ```  ![Build Status](https://img.shields.io/github/actions/workflow/status/lijotech/shields-badges-repo/build.yml)``` |
+
+  
 
 ## Best practices for using badges effectively
 
@@ -109,23 +132,30 @@ When using badges in your Git repository, it’s important to strike a balance b
     Badges can enhance documentation, like wikis or user guides, by displaying the current version, build status, or coverage metrics. They act as quick status indicators for developers or readers.
 
     Use Case: Display current version in documentation.
-    ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-
+   
+    | View      |  ![Version](https://img.shields.io/badge/version-1.0.0-blue) |
+    | ----------- | ----------- |
+    | Markdown      |  ```![Version](https://img.shields.io/badge/version-1.0.0-blue)``` |
 
 - **Open Source Projects**
 
     Highlight community involvement with contributor counts or display the number of issues and pull requests.
 
     Use Case: Show the number of open issues in a GitHub repository.
-    ![Open Issues](https://img.shields.io/github/issues/user/repo)
-
+    
+    | View      | ![Open Issues](https://img.shields.io/github/issues/user/repo) |
+    | ----------- | ----------- |
+    | Markdown      | ```![Open Issues](https://img.shields.io/github/issues/user/repo)``` |
 
 - **Software Product Pages**
 
     On product pages or websites, badges can display support information (e.g., the latest stable release, compatibility with platforms like Linux, Windows, or macOS).
 
     Use Case: Indicate compatibility with platforms like Windows and Linux.
-    ![Platform](https://img.shields.io/badge/platform-windows%7Clinux-brightgreen)
+    
+    | View      | ![Platform](https://img.shields.io/badge/platform-windows%7Clinux-brightgreen) |
+    | ----------- | ----------- |
+    | Markdown      | ```![Platform](https://img.shields.io/badge/platform-windows%7Clinux-brightgreen)``` |
 
 
 - **API Services**
@@ -133,54 +163,70 @@ When using badges in your Git repository, it’s important to strike a balance b
     Use badges to show API health, uptime, response times, or usage statistics directly on dashboards or documentation.
 
     Use Case: Display uptime of an API.
-    ![API Uptime](https://img.shields.io/uptimerobot/status/m778918918-d309)
-
+        
+    | View      | ![API Uptime](https://img.shields.io/uptimerobot/status/m778918918-d309) |
+    | ----------- | ----------- |
+    | Markdown      | ```![API Uptime](https://img.shields.io/uptimerobot/status/m778918918-d309)``` |
 
 - **Learning Platforms or Courses**
 
     Display progress or completion status for courses or challenges on learning platforms.
 
     Use Case: Indicate course progress.
-    ![Progress](https://img.shields.io/badge/progress-80%25-blue)
-
+        
+    | View      | ![Progress](https://img.shields.io/badge/progress-80%25-blue) |
+    | ----------- | ----------- |
+    | Markdown      | ```![Progress](https://img.shields.io/badge/progress-80%25-blue)``` |
 
 - **Software Installation Status**
 
     Show download or install statistics to give users confidence in the popularity or reliability of a tool.
 
     Use Case: Show the number of downloads of your software package.
-    ![Downloads](https://img.shields.io/badge/downloads-10k%2B-blue)
-
+    
+    | View      | ![Downloads](https://img.shields.io/badge/downloads-10k%2B-blue) |
+    | ----------- | ----------- |
+    | Markdown      | ```![Downloads](https://img.shields.io/badge/downloads-10k%2B-blue)``` |
 
 - **Blogs or Personal Websites**
 
     Use badges to share information like the blog’s RSS feed status, subscriber count, or content categories.
 
     Use Case: Show the RSS feed status of your blog.
-    ![RSS](https://img.shields.io/badge/rss-active-brightgreen)
-
+    
+    | View      | ![RSS](https://img.shields.io/badge/rss-active-brightgreen) |
+    | ----------- | ----------- |
+    | Markdown      | ```![RSS](https://img.shields.io/badge/rss-active-brightgreen)``` |
 
 - **Community Forums or Support Pages**
 
     Indicate forum activity, user rankings, or issue response times.
 
     Use Case: Indicate the number of active threads in a forum.
-    ![Active Threads](https://img.shields.io/badge/threads-25-active-brightgreen)
+    
+    | View      | ![Active Threads](https://img.shields.io/badge/threads-25-active-brightgreen) |
+    | ----------- | ----------- |
+    | Markdown      | ```![Active Threads](https://img.shields.io/badge/threads-25-active-brightgreen)``` |
 
 - **Gamification**
 
     Implement badges in gamification systems, showing achievements, milestones, or leaderboard rankings.
 
     Use Case: Indicate a gamification milestone, like the user's level.
-    ![Achievement](https://img.shields.io/badge/level-10-gold)
-
+    
+    | View      | ![Achievement](https://img.shields.io/badge/level-10-gold) |
+    | ----------- | ----------- |
+    | Markdown      | ```![Achievement](https://img.shields.io/badge/level-10-gold)``` |
 
 - **DevOps Pipelines**
 
     Use badges in monitoring dashboards to display the status of deployments, pipelines, or code releases.
 
     Use Case: Display deployment status on a CI/CD dashboard.
-    ![Deployment Status](https://img.shields.io/badge/deployment-success-brightgreen)
+    
 
+    | View      | ![Deployment Status](https://img.shields.io/badge/deployment-success-brightgreen) |
+    | ----------- | ----------- |
+    | Markdown      | ```![Deployment Status](https://img.shields.io/badge/deployment-success-brightgreen)``` |
 
 Feel free to explore the [GitHub repository](https://github.com/lijotech/shields-badges-repo) for more details and examples. Happy coding!    
