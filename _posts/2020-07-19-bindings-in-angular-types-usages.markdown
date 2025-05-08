@@ -5,7 +5,7 @@ date: 2020-07-19 13:23:00 +0200
 comments: true
 published: true
 categories: ["blog", "archives"]
-tags: ["Angular ", " bindings", "property binding", "attribute binding", "class binding", "style binding", "event binding", "two-way binding", "usage of binding", "angular bindings"]
+tags: ["angular", "bindings", "property binding", "attribute binding", "class binding", "style binding", "event binding", "two-way binding", "usage of binding", "angular bindings"]
 permalink: /post/bindings-in-angular-types-usages
 ---
 
