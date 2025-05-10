@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mastering Angular CLI: Your Gateway to Efficient Developmen"
+title: "Mastering Angular CLI: Your Gateway to Efficient Development"
 date: 2020-06-16 06:20:00 +0200
 comments: true
 published: true

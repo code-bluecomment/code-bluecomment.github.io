@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Structure of an Angular Application"
+title: "Understanding the Structure of an Angular Application: A Developer’s Guide"
 date: 2020-06-25 05:46:00 +0200
 comments: true
 published: true
@@ -9,69 +9,83 @@ tags: ["angular", "solution", "structure of solution", "end to end test", "protr
 permalink: /post/structure-of-an-angular-application
 ---
 
-Below we explain the basic structure of an angular application. We give a brief idea about what is the purpose of each folder and files.
+You open your project folder and see a maze of files and directories—but what do they all mean? Let’s embark on a journey to demystify the structure of an Angular application and understand how each piece fits together.
+
+
 
 ![structure-of-angular-application](/assets/img/posts/2020/06/structure-of-angular-application.jpg)
 
-**e2e** \[Folder\]  
-Used for writing end-to-end tests in the application. Mainly used for automated tests that stimulates a user browsing process on a web page.e2e test is done by using a library called [Protractor](https://www.protractortest.org/ "Protractor"). As an angular developer he doesn't need to worry about this folder, mostly comes in picture when we are doing testing in our application.
+## The Foundation: Angular Workspace
 
-**\-protractor.conf.js** \[File\]  
-It has all the setting for running test
+When you create a new Angular project using the CLI (`ng new my-angular-app`), Angular sets up a workspace—a structured environment containing everything needed to build, test, and deploy your application.
 
-**\-tsconfig.json** \[File\]  
-It has settings for the compiler when running e2e tests.
+### Key Components of an Angular Workspace
 
-**\-src** \[Folder\] **> app.e2e-spec.ts** \[File\]  
-All our test cases are written in this file. The test code is written using Jasmine.
+- **src/** – The heart of your application, where all the magic happens.
+- **angular.json** – The configuration file that defines how your project is built and served.
+- **package.json** – Manages dependencies and scripts for your project.
+- **node_modules/** – Contains installed npm packages.
+- **tsconfig.json** – Configures TypeScript settings for your project.
+Now, let’s dive deeper into the src/ folder, where your actual application resides.
 
-**\-src** \[Folder\] **\> app.po.ts** \[File\]  
-We write code in this file to identify elements on our page.
+## Breaking Down the src/ Folder
 
-**node\_modules** \[Folder\]  
-It contains all third party libraries which are used for development purpose only. During compiling the contents of this folder are bundled. We will not deploy the _node\_modules_ folder to the production server.
+Inside `src/`, you’ll find several important directories and files
 
-**src** \[Folder\]  
-Inside this folder our actual source code is present.
+### app/ – The Core of Your Application
+This folder contains the main logic of your Angular app. It includes:
+- **app.module.ts** – The root module that bootstraps your application.
+- **app.component.ts** – The main component that serves as the entry point.
+- **app.component.html** – The template file defining the UI.
+- **app.component.css** – Styles for the component.
 
-\-**app** \[Folder\]  
-Here basic building blocks of angular applications like components and modules are present. Every application has at least one module and one component.
+### assets/ – Static Resources
+This folder holds images, icons, and other assets used in your application.
 
-\-**assets** \[Folder\]  
-we store all images and static files inside this folder.
+### environments/ – Configuration for Different Environments
+Contains files like `environment.ts` and `environment.prod.ts` to manage settings for development and production.
 
-\-**environments** \[Folder\]  
-We store configuration settings for the different environments in this folder. Mostly it has two files _environment.prod.ts,environment.ts_
+### main.ts – The Entry Point
+This file bootstraps the Angular application by calling `platformBrowserDynamic().bootstrapModule(AppModule)`.
 
-\-**main.ts** \[File\]  
-This is the starting point of our application.it bootstraps the main module of the application and then the angular will load this module and the rest of the functionality works from there.
+### index.html – The Single Page Container
+Defines the main HTML structure and loads the Angular application
 
-\-**polyfills.ts** \[File\]  
-It is a bridging file to fill the gap between features that are supported in browsers and features need for the angular application to work.mainly it imports some javascript.
+## Additional Important Files & Folders
 
-\-**styles.scss** \[File\]  
-We add global styles in this file.
+### e2e/ – End-to-End Testing Folder
+This folder contains test scripts for **end-to-end (E2E)** testing using Protractor or other testing frameworks. However, Protractor has been deprecated in Angular 12+, and many developers now use **Cypress or Playwright** for E2E testing.
 
-\-**test.ts** \[File\]  
-It has settings for the testing environment.
+### protractor.conf.js – Protractor Configuration File
+If your project still uses Protractor, this file defines settings for running E2E tests. However, since Protractor is deprecated, consider migrating to Cypress or Playwright.
 
-**.editorconfig** \[File\]  
-It contains the settings for the code editor. when working in a team on the same project all developers should have the same setting on this file.
+### polyfills.ts – Compatibility Enhancements
+This file includes polyfills that ensure Angular applications work across different browsers. It helps older browsers support modern JavaScript features.
 
-**.gitignore** \[File\]  
-It is used in version control to ignore files when checking out files to the repo.
+### test.ts – Unit Testing Entry Point
+This file is used for **unit testing** with Karma and Jasmine. It configures the test environment and loads test modules.
 
-**angular.json** \[File\]  
-It contains standard configurations for the application.
+### .editorconfig – Code Formatting Rules
+This file defines **editor settings** to maintain consistent coding styles across different IDEs and text editors.
 
-**karma.conf.js** \[File\]  
-Karma is a test runner in javascript. All settings are present in this file.
+### karma.conf.js – Karma Configuration File
+This file configures **Karma**, the test runner used for unit testing in Angular. It defines settings like test frameworks, reporters, and browsers for running tests.
 
-**package.json** \[File\]  
-It is a standard file present for all applications. It specifies what all libraries our application is depending upon.it has two sections: _devDependencies_ -dependencies for the developer machine and those libraries are not needed to upload to production, and the other one _Dependencies_\-core libraries needed for the main application.
+## Common Issues & Solutions in Angular Application Structure
 
-**tsconfig.json** \[File\]  
-It has settings for the typescript compiler.
+### Module Not Found Errors
+✅ Solution: Ensure the module is correctly imported in `app.module.ts`.
 
-**tslint.json** \[File\]  
-It is a static analysis tool for typescript code.it checks the code for readability and functionality errors.
+### Component Not Rendering
+✅ Solution: Check if the selector is correctly used in `index.html` or another component.
+
+### Styles Not Applying
+✅ Solution: Verify that styles are correctly linked in the component or global styles.
+
+### Protractor Tests Not Running
+✅ Solution: Since Protractor is deprecated, consider migrating to Cypress or Playwright for E2E testing.
+
+## Final Thoughts
+Understanding the structure of an Angular application is key to mastering Angular development. By organizing components, modules, and services effectively, developers can build scalable and maintainable applications.
+
+Have you encountered any challenges while working with Angular’s structure? Share your experiences in the comments!
