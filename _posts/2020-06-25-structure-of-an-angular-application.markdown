@@ -11,8 +11,6 @@ permalink: /post/structure-of-an-angular-application
 
 You open your project folder and see a maze of files and directories—but what do they all mean? Let’s embark on a journey to demystify the structure of an Angular application and understand how each piece fits together.
 
-
-
 ![structure-of-angular-application](/assets/img/posts/2020/06/structure-of-angular-application.jpg)
 
 ## The Foundation: Angular Workspace

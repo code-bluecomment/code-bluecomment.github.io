@@ -5,7 +5,7 @@ date: 2020-07-04 15:37:00 +0200
 comments: true
 published: true
 categories: ["blog", "archives"]
-tags: ["webpack", "angular webpack", "purpose of webpack", "hot module reloading", "hot module replacement", "HMR"]
+tags: ["webpack", "angular webpack", "purpose of webpack", "hot module reloading", "hot module replacement","HMR"]
 permalink: /post/purpose-of-webpack-in-angular-application
 ---
 
